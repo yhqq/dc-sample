@@ -57,7 +57,7 @@ public class APIController {
 
 		//JsonObject sensorData = Json.createObjectBuilder().add("Temperature", body).build();
 
-		RequestPrimitive request = requestPrimitiveBuilder.to("deviceAddress:123/default").content(body).build(); 
+		RequestPrimitive request = requestPrimitiveBuilder.from("deviceAddress:123").to("deviceAddress:123/default").content(body).build(); 
 		ResponsePrimitive response = dc.sendRequestToIOT(request);
 
 		return ResponseEntity.accepted().body(response);
