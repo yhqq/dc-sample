@@ -16,7 +16,7 @@
 *-----------------------------------------------------------------------------
 */
 
-package com.hpe.iot.dc.north;
+package com.hpe.iot.dc.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

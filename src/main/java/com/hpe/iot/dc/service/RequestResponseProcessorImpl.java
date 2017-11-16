@@ -16,7 +16,7 @@
 *-----------------------------------------------------------------------------
 */
 
-package com.hpe.iot.dc.north;
+package com.hpe.iot.dc.service;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -26,7 +26,6 @@ import javax.jms.JMSException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.hpe.iot.dc.service.AbstractDC;
 import com.hpe.iot.dc.util.ResourceMapper;
 import com.hpe.iot.m2m.common.RequestPrimitive;
 import com.hpe.iot.m2m.common.ResponsePrimitive;
@@ -42,7 +41,7 @@ import com.hpe.iot.proxy.util.RequestResponseHandler;
 public class RequestResponseProcessorImpl extends RequestResponseHandler {
 
 	@Autowired
-	AbstractDC abstractDC;
+	DeviceController abstractDC;
 
 	 /*
 	 * (non-Javadoc)

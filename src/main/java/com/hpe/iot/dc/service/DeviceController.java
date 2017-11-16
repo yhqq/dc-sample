@@ -25,7 +25,7 @@ import com.hpe.iot.m2m.common.ResponsePrimitive;
  * @author pmshak
  *
  */
-public interface AbstractDC {
+public interface DeviceController {
 	
 	/**
 	 * @param requestPrimitive
