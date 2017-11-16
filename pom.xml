@@ -162,30 +162,21 @@
 			<groupId>com.hpe</groupId>
 			<artifactId>m2m-common</artifactId>
 			<version>1.10</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/lib/m2m-common-1.10.jar</systemPath>
-
 		</dependency>
 		<dependency>
 			<groupId>com.hpe</groupId>
 			<artifactId>iot-proxy</artifactId>
 			<version>1.10</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/lib/iot-proxy-1.10.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>com.hpe</groupId>
 			<artifactId>nononem2m-common</artifactId>
 			<version>1.4.0</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/lib/nononem2m-common-1.4.0.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>com.hpe</groupId>
 			<artifactId>onem2m-common</artifactId>
 			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/lib/onem2m-common-1.0.jar</systemPath>
 		</dependency>
 
 		<!-- AspectJ -->

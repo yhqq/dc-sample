@@ -11,7 +11,7 @@
 	</appender>
 
 	<appender name="DC" class="org.apache.log4j.DailyRollingFileAppender">
-	 <param name="File" value="${jboss.server.log.dir}/hpe.log"/>
+	 <param name="File" value="${jboss.server.log.dir}/dc-sample.log"/>
 		<param name="DatePattern" value="'.'yyyy-MM-dd"/>
 		<param name="Append" value="true"/>
 		<layout class="org.apache.log4j.PatternLayout">
