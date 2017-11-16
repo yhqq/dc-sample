@@ -21,7 +21,7 @@
 
 	<!-- Application Loggers -->
 	<logger name="com.hpe.iot.dc">
-		<level value="DEBUG" />
+		<level value="INFO" />
 	</logger>
 
 	<!-- 3rdparty Loggers -->
@@ -40,7 +40,7 @@
 
 	<!-- Root Logger -->
 	<root>
-		<priority value="DEBUG" />
+		<priority value="INFO" />
 		<appender-ref ref="DC" />
 	</root>
 
