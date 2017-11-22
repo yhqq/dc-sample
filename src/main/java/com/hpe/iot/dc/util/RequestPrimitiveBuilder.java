@@ -2,32 +2,24 @@ package com.hpe.iot.dc.util;
 
 import java.math.BigInteger;
 import java.util.UUID;
-
-import org.springframework.stereotype.Service;
-
 import com.hpe.iot.m2m.common.ContentInstance;
 import com.hpe.iot.m2m.common.PrimitiveContent;
 import com.hpe.iot.m2m.common.RequestPrimitive;
 import com.hpe.iot.m2m.common.ResponseTypeInfo;
 
-@Service
 public class RequestPrimitiveBuilder {
 
 	private String to = "";
 	private String from = "";
 	private Object content = "";
 	
-	public RequestPrimitiveBuilder to(String to) {
-		this.to = to;
+	public RequestPrimitiveBuilder targetDeviceId(String deviceId) {
+		this.from = "DeviceID:" + deviceId;
+		this.to = "DeviceID:" + deviceId + "/default";
 		return this;
 	}
 	
-	public RequestPrimitiveBuilder from(String from) {
-		this.from = from;
-		return this;
-	}
-	
-	public RequestPrimitiveBuilder content(Object content) {
+	public RequestPrimitiveBuilder sensorData(Object content) {
 		this.content = content;
 		return this;
 	}
